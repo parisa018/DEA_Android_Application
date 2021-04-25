@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#36a4bf</color>
+    <color name="colorPrimaryDark">#186a81</color>
+    <color name="colorAccent">#ffc90e</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="text_color1">#d2c7d9</color>
+    <color name="gray">#544e4e</color>
+    <color name="light_gray">#e8e8e8</color>
+    <color name="table_output_color">#104040</color>
+    <color name="table_input_color">#70c2c2</color>
+    <color name="header_background">#5b9bd5</color>
+    <color name="cell_background">#eaeff7</color>
+</resources>

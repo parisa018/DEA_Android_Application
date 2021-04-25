@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.IO_BCCModelViewFragment">
+
+    <LinearLayout
+        android:layout_marginVertical="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <com.evrencoskun.tableview.TableView
+            android:layout_weight="0.4"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/table_IO"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="3dp"/>
+        <RelativeLayout
+            android:layout_weight="0.6"
+            android:layout_marginTop="3dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <WebView
+                android:visibility="visible"
+                android:layout_marginTop="3dp"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/web_view_IO"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

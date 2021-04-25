@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DEA</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="enter_data_title">Enter Data</string>
+    <string name="DMU_number">Number of DMU :</string>
+    <string name="input_number">Number of input :</string>
+    <string name="output_number">Number of output :</string>
+    <string name="submit">Submit</string>
+    <string name="submit_table">Submit the table</string>
+    <string name="input">input :</string>
+    <string name="output">output :</string>
+    <string name="input1">input</string>
+    <string name="output1">output</string>
+    <string name="dmu">DMU</string>
+    <string name="productivity">productivity</string>
+    <string name="DEA">DEA</string>
+    <string name="CCR">CCR</string>
+    <string name="IOBCC">BCC</string>
+    <string name="OOBCC">OO-BCC</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

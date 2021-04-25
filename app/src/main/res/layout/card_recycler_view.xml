@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr">
+    <LinearLayout
+        android:layout_weight="0.45"
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:weightSum="1.95">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/dmu_textView"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/internet_bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/dmu"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size7" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/light_gray"
+            android:layout_marginHorizontal="20dp"></View>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/input_tv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:fontFamily="@font/internet_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/input"
+                android:textColor="@color/table_input_color"
+                android:textSize="@dimen/size5" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left|start"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toRightOf="@id/input_tv"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/input_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/internet_regular"
+                    android:gravity="left|start"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size4" />
+                <TextView
+                    android:visibility="invisible"
+                    android:fontFamily="@font/internet_regular"
+                    android:gravity="left|start"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size4"
+                    android:maxLines="1"
+                    android:id="@+id/input_ans_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/output_tv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:fontFamily="@font/internet_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/output"
+                android:textColor="@color/table_output_color"
+                android:textSize="@dimen/size5" />
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:gravity="center_vertical|left|start"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toRightOf="@id/output_tv"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <EditText
+                    android:maxLines="1"
+                    android:fontFamily="@font/internet_regular"
+                    android:id="@+id/output_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:gravity="left|start"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size4" />
+                <TextView
+                    android:visibility="invisible"
+                    android:fontFamily="@font/internet_regular"
+                    android:gravity="left|start"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size4"
+                    android:maxLines="1"
+                    android:id="@+id/output_ans_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25">
+            <ImageView
+                android:id="@+id/card_submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn"
+                android:layout_centerInParent="true"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size3"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/internet_bold"></TextView>
+        </RelativeLayout>
+    </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"></View>
+    </LinearLayout>
+</RelativeLayout>
